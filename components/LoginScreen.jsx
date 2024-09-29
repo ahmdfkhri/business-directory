@@ -42,7 +42,7 @@ export default function LoginScreen() {
       </View>
       <View style={styles.subContainer}>
         <Text style={{
-          fontSize: 35,
+          fontSize: 30,
           fontFamily: 'outfit-bold',
           textAlign: 'center',
         }}>
