@@ -7,6 +7,7 @@ import { db } from '../../configs/FirebaseConfig';
 import { Colors } from '../../constants/Colors';
 import ActionButton from '../../components/BusinessDetail/ActionButton';
 import About from '../../components/BusinessDetail/About';
+import Reviews from '../../components/Reviews';
 
 export default function BusinessDetail() {
   const {businessid} = useLocalSearchParams();
@@ -25,7 +26,7 @@ export default function BusinessDetail() {
 
     if (docSnap.exists()) {
       console.log("Document data: ", docSnap.data());
-      setBusiness(docSnap.data());
+      setBusiness({id:docSnap.id,...docSnap.data()});
       setLoading(false);
     } else {
       console.log("No such document!");
@@ -48,6 +49,8 @@ export default function BusinessDetail() {
           <ActionButton business={business}/>
           {/* About Section */}
           <About business={business}/>
+          {/* Review Section */}
+          <Reviews business={business}/>
         </View>
       }
     </ScrollView>

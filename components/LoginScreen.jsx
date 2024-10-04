@@ -29,6 +29,7 @@ export default function LoginScreen() {
     <View>
       <View style={{
         display: 'flex',
+        flex:1,
         alignItems: 'center',
         marginTop: 100
       }}>
