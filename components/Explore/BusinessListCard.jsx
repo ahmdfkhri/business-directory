@@ -27,7 +27,7 @@ export default function BusinessListCard({business}) {
         padding:10
       }}>
         <Text style={{
-            fontFamily:'uotfit-bold',
+            fontFamily:'outfit-bold',
             fontSize:20
         }}>{business?.name}</Text>
         <Text style={{
