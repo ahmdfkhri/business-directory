@@ -34,6 +34,10 @@ export default function MenuList() {
     ]
 
     const router=useRouter();
+    
+    const onMenuClick = (item) => {
+        router.push(item.path);
+    }
   return (
     <View style={{
         marginTop:50
@@ -43,7 +47,7 @@ export default function MenuList() {
         numColumns={2}
         renderItem={({item,index})=>(
             <TouchableOpacity 
-            onPress={()=>router.push(item.path)}
+            onPress={()=>onMenuClick(item)}
             style={{
                 display:'flex',
                 flexDirection:'row',
