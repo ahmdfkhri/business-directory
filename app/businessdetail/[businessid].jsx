@@ -3,7 +3,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import React, { useEffect, useState } from 'react';
 import { ActivityIndicator, ScrollView, View } from 'react-native';
 import Intro from '../../components/BusinessDetail/Intro';
-import { db } from '../../configs/FirebaseConfig';
+import { db } from './../../configs/FirebaseConfig';
 import { Colors } from '../../constants/Colors';
 import ActionButton from '../../components/BusinessDetail/ActionButton';
 import About from '../../components/BusinessDetail/About';

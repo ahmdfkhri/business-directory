@@ -3,7 +3,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { TouchableOpacity } from "react-native";
 import { useRouter } from "expo-router";
 import { deleteDoc, doc } from "firebase/firestore";
-import { db } from "../../configs/FirebaseConfig";
+import { db } from "./../../configs/FirebaseConfig";
 import { useUser } from "@clerk/clerk-expo";
 
 export default function Intro({business}) {

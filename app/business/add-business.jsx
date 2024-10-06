@@ -4,7 +4,7 @@ import { useNavigation } from 'expo-router'
 import { Colors } from '../../constants/Colors';
 import * as ImagePicker from 'expo-image-picker';
 import RNPickerSelect from 'react-native-picker-select';
-import { db, storage } from '../../configs/FirebaseConfig';
+import { db, storage } from './../../configs/FirebaseConfig';
 import { collection, doc, getDocs, query, setDoc } from 'firebase/firestore';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { useUser } from '@clerk/clerk-expo';

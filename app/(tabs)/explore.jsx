@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons'
 import { Colors } from '../../constants/Colors'
 import Category from '../../components/Home/Category'
 import { collection, getDocs, query, where } from 'firebase/firestore'
-import { db } from '../../configs/FirebaseConfig'
+import { db } from './../../configs/FirebaseConfig'
 import ExploreBusinessList from '../../components/Explore/ExploreBusinessList'
 
 export default function explore() {
